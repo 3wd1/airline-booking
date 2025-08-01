@@ -1,0 +1,160 @@
+<!-- Student Name: Obaid Humaid Almansoori -->
+<!-- Student ID: 1087831 -->
+
+<!-- Declares this document as an HTML5 page -->
+<!DOCTYPE html>
+<html lang="en"> <!-- Sets the language of the page to English -->
+
+<head>
+  <!-- Sets character encoding to UTF-8 for correct text rendering -->
+  <meta charset="UTF-8">
+
+  <!-- Title shown in browser tab -->
+  <title>Available Flights</title>
+
+  <!-- Internal CSS to style the structure and layout of the page -->
+  <style>
+    /* Applies background color, font, and removes margin/padding from body */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    /* Styling for the page header */
+    h1 {
+      background-color: #8B0000; /* Dark red background */
+      color: white;
+      padding: 20px;
+      margin: 0;
+    }
+
+    /* Container that holds all the flight cards using Flexbox */
+    .flights-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    /* Individual flight card with styling */
+    .flight-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      width: 300px;
+      margin: 15px;
+      padding: 20px;
+      text-align: left; /* Align text to the left inside card */
+    }
+
+    /* Flight image in each card */
+    .flight-card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover; /* Keeps image proportions and fills box */
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    /* Airline name heading */
+    .flight-card h2 {
+      color: #004080; /* Dark blue color for airline name */
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* Flight information paragraph spacing */
+    .flight-card p {
+      margin: 5px 0;
+    }
+
+    /* Book Now button styling */
+    .book-btn {
+      display: inline-block;
+      background-color: #003366;
+      color: white;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Changes color of button when user hovers */
+    .book-btn:hover {
+      background-color: #001f4d;
+    }
+
+    /* Link at bottom to return to welcome page */
+    .back-link {
+      margin: 30px auto 50px;
+      display: block;
+      text-align: center;
+      color: darkred;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* Underlines the return link when hovered */
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Main title of the page -->
+  <h1>Available Flights</h1>
+
+  <!-- Flex container holding all flight options -->
+  <div class="flights-container">
+
+    <!-- First Flight Option: Desert Falcon -->
+    <div class="flight-card">
+      <img src="desertfalcon.jpg" alt="Desert Falcon Image"> <!-- Airline image -->
+      <h2>Desert Falcon</h2> <!-- Airline name -->
+      <p>Route: Dubai → Tokyo</p> <!-- Flight route -->
+      <p>Time: 9h 45m</p> <!-- Flight duration -->
+      <p>Economy: AED 2,800</p> <!-- Economy price -->
+      <p>Business: AED 6,400</p> <!-- Business price -->
+      <p>First Class: AED 10,500</p> <!-- First Class price -->
+      <a href="thankyou.html" class="book-btn">Book Now</a> <!-- Booking button -->
+    </div>
+
+    <!-- Second Flight Option: Emirates Horizon -->
+    <div class="flight-card">
+      <img src="emirateshorizon.jpg" alt="Emirates Horizon Image">
+      <h2>Emirates Horizon</h2>
+      <p>Route: Abu Dhabi → London</p>
+      <p>Time: 7h 30m</p>
+      <p>Economy: AED 2,100</p>
+      <p>Business: AED 5,000</p>
+      <p>First Class: AED 8,900</p>
+      <a href="thankyou.html" class="book-btn">Book Now</a>
+    </div>
+
+    <!-- Third Flight Option: Zayed Wings -->
+    <div class="flight-card">
+      <img src="zayedwings.jpg" alt="Zayed Wings Image">
+      <h2>Zayed Wings</h2>
+      <p>Route: Sharjah → Cairo</p>
+      <p>Time: 4h 5m</p>
+      <p>Economy: AED 980</p>
+      <p>Business: AED 2,350</p>
+      <p>First Class: AED 4,600</p>
+      <a href="thankyou.html" class="book-btn">Book Now</a>
+    </div>
+
+  </div>
+
+  <!-- Link to return back to the main welcome page -->
+  <a href="index.html" class="back-link">← Return to Welcome Page</a>
+
+</body>
+</html>

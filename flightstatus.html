@@ -1,0 +1,115 @@
+<!-- Student Name: Obaid Humaid Almansoori -->
+<!-- Student ID: 1087831 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flight Status</title>
+    <style>
+        /* Set background look: center text, clean font, and light blue background */
+        body {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ddeeff;
+        }
+
+        /* Make the main heading dark blue */
+        h1 {
+            color: #003366;
+        }
+
+        /* Make the paragraph under the heading a bit bigger and easy to read */
+        p {
+            font-size: 18px;
+            color: #000;
+        }
+
+        /* Style the form box where the user enters flight info */
+        form {
+            display: inline-block; /* So it's centered */
+            text-align: left;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+            width: 90%;
+            max-width: 400px;
+        }
+
+        /* Make the field labels bold */
+        label {
+            font-weight: bold;
+        }
+
+        /* Style the input fields to look clean and even */
+        input {
+            display: block;
+            padding: 7px;
+            margin-bottom: 20px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Make the submit button blue with white text */
+        input[type="submit"] {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* Make the submit button darker blue when mouse hovers on it */
+        input[type="submit"]:hover {
+            background-color: #002d59;
+        }
+
+        /* Style for the home link below the form */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #004080;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Image style: spacing and border */
+        img {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 2px solid #004080;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page heading -->
+    <h1><u>Check Flight Status</u></h1>
+
+    <!-- Simple instructions for the user -->
+    <p>Enter your flight number and date to see the latest status update.</p>
+
+    <!-- Add image related to flights -->
+    <img src="flightboard.jpeg" alt="Flight Status" width="1000px" height="400px">
+
+    <!-- Form to collect flight number and date, then move to flightdetails.html -->
+    <form action="flightdetails.html" method="get">
+        <label>Flight Number:</label>
+        <input type="text" placeholder="e.g. UAE101" required>
+
+        <label>Date of Flight:</label>
+        <input type="date" required>
+
+        <input type="submit" value="Check Status">
+    </form>
+
+    <!-- Link to go back to main welcome page -->
+    <br>
+    <a href="index.html">← Return Home</a>
+
+</body>
+</html>
