@@ -1,0 +1,159 @@
+<!-- Student Name: Obaid Humaid Almansoori -->
+<!-- Student ID: 1087831 -->
+
+<!-- Declares this as an HTML5 document -->
+<!DOCTYPE html>
+<html lang="en"> <!-- Sets the language to English -->
+
+<head>
+    <!-- The title that appears in the browser tab -->
+    <title>Book a Flight</title>
+
+    <!-- Internal CSS for styling the page -->
+    <style>
+        /* Page background, font style, and alignment */
+        body {
+            background-color: bisque;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        /* Styling for the page heading */
+        h1 {
+            color: black;
+        }
+
+        /* Paragraph text style */
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Styling the form box */
+        form {
+            display: inline-block;
+            margin-top: 20px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 90%;
+            border-radius: 15px;
+            padding: 25px;
+            background-color: #fef9f4;
+        }
+
+        /* Bold text for form labels */
+        label {
+            font-weight: bold;
+        }
+
+        /* Style for input fields and dropdowns */
+        input, select {
+            display: block;
+            padding: 7px;
+            margin-bottom: 20px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style for the submit button */
+        input[type="submit"] {
+            background: linear-gradient(to right, #0077cc, #0059b3);
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Hover effect for submit button */
+        input[type="submit"]:hover {
+            background-color: #003d80;
+        }
+
+        /* Styling for the return link at the bottom */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: #004080;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Styling for the airplane image */
+        img {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 2px solid #004080;
+        }
+
+        /* Styling for the horizontal line separator */
+        hr {
+            border: none;
+            height: 3px;
+            background-color: black;
+            width: 80%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main heading -->
+    <h1><u>Book Your Flight</u></h1>
+
+    <!-- Horizontal line below heading -->
+    <hr>
+
+    <!-- Intro message to guide the user -->
+    <p><u>Fill your details here to find the best available options.</u></p>
+
+    <!-- Decorative airplane image -->
+    <img src="airplane.jpg" alt="Picture of Airplane" width="1000px" height="400px">
+
+    <!-- Flight search form that sends data to searchresults.html -->
+    <form action="searchresults.html">
+
+        <!-- Choose type of trip -->
+        <label>Trip Type:</label>
+        <select>
+            <option>Return</option>
+            <option>One Way</option>
+            <option>Multi-City</option>
+        </select>
+
+        <!-- Enter departure location -->
+        <label>From:</label>
+        <input type="text" placeholder="Place of Departure">
+
+        <!-- Enter destination -->
+        <label>To:</label>
+        <input type="text" placeholder="Place of Destination">
+
+        <!-- Choose departure date -->
+        <label>Departure Date:</label>
+        <input type="date">
+
+        <!-- Choose return date -->
+        <label>Return Date:</label>
+        <input type="date">
+
+        <!-- Select number of passengers -->
+        <label>Number of Travelling Passengers:</label>
+        <input type="number" min="1" max="5" value="1">
+
+        <!-- Button to submit form -->
+        <input type="submit" value="Search Flights">
+    </form>
+
+    <!-- Link to go back to home page -->
+    <br>
+    <a href="welcome.html">← Return Home</a>
+
+</body>
+</html>

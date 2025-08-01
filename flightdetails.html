@@ -1,0 +1,86 @@
+<!-- Student Name: Obaid Humaid Almansoori -->
+<!-- Student ID: 1087831 -->
+
+<!-- Declares the document as HTML5 -->
+<!DOCTYPE html>
+<html lang="en"> <!-- Sets the language of the page to English -->
+
+<head>
+    <!-- Sets the tab title of the page -->
+    <title>Flight Status Result</title>
+
+    <!-- Defines the character encoding to support all text -->
+    <meta charset="UTF-8">
+
+    <!-- Internal CSS for styling the page -->
+    <style>
+        /* Overall body style */
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+            font-family: Arial, sans-serif; /* Clean, readable font */
+            text-align: center; /* Centers everything in the body */
+        }
+
+        /* Styling for the main heading */
+        h1 {
+            color: #004080; /* Deep blue for good visibility */
+        }
+
+        /* Styling the white result box */
+        .status-box {
+            background-color: #ffffff; /* White background for contrast */
+            padding: 25px; /* Space inside the box */
+            margin: 40px auto; /* Centers the box on the page */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Soft shadow */
+            width: 90%; /* Responsive width */
+            max-width: 500px; /* Limits width on large screens */
+            text-align: left; /* Aligns content inside to the left */
+        }
+
+        /* Styling the text inside the box */
+        .status-box p {
+            font-size: 18px; /* Clear readable size */
+            margin: 10px 0; /* Vertical spacing between lines */
+        }
+
+        /* Styling the return home button */
+        a {
+            margin-top: 20px;
+            display: inline-block;
+            color: white;
+            background-color: #004080; /* Matches heading color */
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none; /* No underline */
+        }
+
+        /* Hover effect on the button */
+        a:hover {
+            background-color: #002d59; /* Slightly darker blue */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main heading of the page -->
+    <h1>Flight Status Details</h1>
+
+    <!-- White box displaying the result details -->
+    <div class="status-box">
+        <p><strong>Flight Number:</strong> UAE101</p>
+        <p><strong>Date:</strong> 10 August 2025</p>
+        <p><strong>From:</strong> Dubai</p>
+        <p><strong>To:</strong> Tokyo</p>
+        <p><strong>Departure Time:</strong> 09:45 AM</p>
+        <p><strong>Arrival Time:</strong> 02:15 PM</p>
+        <p><strong>Status:</strong> On Time</p>
+        <p><strong>Gate:</strong> A12</p>
+    </div>
+
+    <!-- Link to go back to the welcome page -->
+    <a href="welcome.html">← Return Home</a>
+
+</body>
+</html>

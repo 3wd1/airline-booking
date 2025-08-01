@@ -1,0 +1,125 @@
+<!-- Student Name: Obaid Humaid Almansoori -->
+<!-- Student ID: 1087831 -->
+
+<!-- Declares HTML5 document -->
+<!DOCTYPE html>
+<html lang="en"> <!-- Sets language to English -->
+
+<head>
+    <!-- Page title that appears in browser tab -->
+    <title>Manage Booking</title>
+
+    <!-- Internal CSS for styling the page -->
+    <style>
+        /* Styles for the entire page */
+        body {
+            text-align: center; /* Center-aligns text */
+            font-family: 'Courier New', Courier, monospace; /* Monospaced font style */
+            background-color: cadetblue; /* Light blue background */
+        }
+
+        /* Style for the main heading */
+        h1 {
+            color: bisque; /* Light beige color for heading */
+        }
+
+        /* Style for paragraph text */
+        p {
+            font-size: 18px; /* Medium-sized text */
+            color: white; /* White text color */
+        }
+
+        /* Styles for the form container */
+        form {
+            display: inline-block; /* Allows form to sit centered */
+            text-align: left; /* Aligns labels and inputs to the left */
+            background-color: #fef9f4; /* Light background for contrast */
+            padding: 25px; /* Inner spacing */
+            border-radius: 15px; /* Rounded corners */
+            margin-top: 20px; /* Spacing above the form */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds soft shadow */
+            width: 90%; /* Makes form responsive */
+            max-width: 400px; /* Limits width on large screens */
+        }
+
+        /* Bold styling for labels */
+        label {
+            font-weight: bold;
+        }
+
+        /* Styles for input fields */
+        input {
+            display: block; /* Places each field on its own line */
+            padding: 7px;
+            margin-bottom: 20px; /* Adds spacing between fields */
+            width: 100%; /* Full width of the form container */
+            border-radius: 5px; /* Rounded edges */
+            border: 1px solid #ccc; /* Light gray border */
+        }
+
+        /* Special styling for the submit button */
+        input[type="submit"] {
+            background-color: #004080; /* Deep blue color */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* Hover effect for the submit button */
+        input[type="submit"]:hover {
+            background-color: #002d59; /* Slightly darker blue */
+        }
+
+        /* Styling for the Return Home link */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Styling for the decorative image */
+        img {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px; /* Smooth rounded edges */
+            border: 2px solid #004080; /* Matches theme color */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Main title for the page -->
+    <h1><u>Manage Your Booking</u></h1>
+
+    <!-- Small description for users -->
+    <p>Enter your reservation details to check or update your booking:</p>
+
+    <!-- Decorative image related to flight bookings -->
+    <img src="flightticket.jpg" alt="Boarding Pass" width="1000px" height="400px">
+
+    <!-- The actual form where the user enters booking info -->
+    <!-- Submits to bookingdetails.html when submitted -->
+    <form action="bookingdetails.html" method="get">
+        <!-- Booking reference input field -->
+        <label>Booking Reference Number:</label>
+        <input type="text" placeholder="e.g. AB1234" required>
+
+        <!-- Last name input field -->
+        <label>Last Name:</label>
+        <input type="text" placeholder="e.g. Mohammad" required>
+
+        <!-- Submit button -->
+        <input type="submit" value="Find Booking">
+    </form>
+
+    <!-- Link to go back to the homepage -->
+    <br>
+    <a href="welcome.html">← Return Home</a>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!-- Student Name: Obaid Humaid Almansoori -->
+<!-- Student ID: 1087831 -->
+
+<!-- Declares this document as HTML5 -->
+<!DOCTYPE html>
+<html lang="en"> <!-- Sets language to English -->
+
+<head>
+  <!-- Sets the title for the browser tab -->
+  <title>Reschedule Booking</title>
+
+  <!-- Supports all characters using UTF-8 encoding -->
+  <meta charset="UTF-8">
+
+  <!-- Internal CSS to style the rescheduling form -->
+  <style>
+    /* Basic styling for the body */
+    body {
+      background-color: #f0f8ff; /* Light blue background */
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    /* Page heading style */
+    h1 {
+      color: #004080; /* Dark blue text */
+    }
+
+    /* Styling for the form container */
+    form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 400px;
+      margin: 30px auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: left;
+    }
+
+    /* Label text style */
+    label {
+      font-weight: bold;
+    }
+
+    /* Input fields styling */
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 12px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    /* Submit button style */
+    input[type="submit"] {
+      background-color: #004080;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Hover effect for the submit button */
+    input[type="submit"]:hover {
+      background-color: #002d59;
+    }
+
+    /* Link styling for navigation */
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Main page heading -->
+  <h1>Reschedule Your Booking</h1>
+
+  <!-- Form to reschedule the booking -->
+  <!-- Submits to thankyou.html after updating -->
+  <form action="thankyou.html">
+    <label for="new-departure">New Departure Date:</label>
+    <input type="date" id="new-departure" required>
+
+    <label for="new-return">New Return Date:</label>
+    <input type="date" id="new-return" required>
+
+    <input type="submit" value="Submit New Dates">
+  </form>
+
+  <!-- Link to go back to the homepage -->
+  <a href="welcome.html">← Return Home</a>
+
+</body>
+</html>
